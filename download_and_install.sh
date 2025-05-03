@@ -108,11 +108,11 @@ install_tool() {
     
     echo "Installing $tool_name..."
     if [ ! -d "$tool_dir" ]; then
-        echo "Error: Directory $tool_dir not found in $PENDRIVE_DIR"
+        echo "Error: Directory $tool_dir not found in $tool_dir"
         exit 1
     fi
     
-    cd "$PENDRIVE_DIR/$tool_dir" || { echo "Error: Could not access $tool_dir"; exit 1; }
+    cd "$tool_dir" || { echo "Error: Could not access $tool_dir"; exit 1; }
     eval "$install_cmd"
     check_command "Installation of $tool_name"
 }
