@@ -41,23 +41,24 @@ for package in "${packages[@]}"; do
     fi
 done
 
-git clone https://github.com/aircrack-ng/mdk4
-git clone https://github.com/aircrack-ng/aircrack-ng.git
-git clone https://github.com/nmap/nmap.git
-git clone https://github.com/sullo/nikto
-git clone https://github.com/vanhauser-thc/thc-hydra.git
-git clone https://github.com/openwall/john.git
-git clone https://github.com/v0re/dirb.git
-git clone https://github.com/trustedsec/social-engineer-toolkit.git
-git clone https://github.com/derv82/wifite2.git
-git clone https://github.com/exiftool/exiftool.git
-git clone https://github.com/hyc/fcrackzip.git
-git clone https://github.com/netdiscover-scanner/netdiscover.git
-git clone https://github.com/mitmproxy/mitmproxy.git
-git clone https://github.com/s0md3v/XSStrike.git
-git clone https://github.com/digininja/CeWL.git
-git clone https://github.com/maurosoria/dirhunt.git
-git clone https://github.com/projectdiscovery/subfinder.git
+git clone https://github.com/aircrack-ng/mdk4.git mdk4
+git clone https://github.com/aircrack-ng/aircrack-ng.git aircrack-ng
+git clone https://github.com/nmap/nmap.git nmap
+git clone https://github.com/sullo/nikto.git nikto
+git clone https://github.com/vanhauser-thc/thc-hydra.git thc-hydra
+git clone https://github.com/openwall/john.git john
+git clone https://github.com/v0re/dirb.git dirb
+git clone https://github.com/trustedsec/social-engineer-toolkit.git social-engineer-toolkit
+git clone https://github.com/derv82/wifite2.git wifite2
+git clone https://github.com/exiftool/exiftool.git exiftool
+git clone https://github.com/hyc/fcrackzip.git fcrackzip
+git clone https://github.com/netdiscover-scanner/netdiscover.git netdiscover
+git clone https://github.com/mitmproxy/mitmproxy.git mitmproxy
+git clone https://github.com/s0md3v/XSStrike.git XSStrike
+git clone https://github.com/digininja/CeWL.git CeWL
+git clone https://github.com/maurosoria/dirhunt.git dirhunt
+git clone https://github.com/projectdiscovery/subfinder.git subfinder
+
 
 # Function to check if a command was executed successfully
 check_command() {
