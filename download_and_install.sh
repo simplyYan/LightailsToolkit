@@ -58,6 +58,8 @@ git clone https://github.com/s0md3v/XSStrike.git XSStrike
 git clone https://github.com/digininja/CeWL.git CeWL
 git clone https://github.com/maurosoria/dirhunt.git dirhunt
 git clone https://github.com/projectdiscovery/subfinder.git subfinder
+git clone https://github.com/soxoj/maigret.git maigret
+git clone https://github.com/lanmaster53/recon-ng.git recon-ng
 
 
 # Function to check if a command was executed successfully
@@ -118,6 +120,8 @@ install_tool() {
 }
 
 # install tools
+sudo pip3 install maigret
+sudo apt install -y dmitry macchanger eyewitness theharvester maltego
 install_tool "mdk4" "mdk4" "make && sudo make install"
 install_tool "aircrack-ng" "aircrack-ng" "autoreconf -i && ./configure --with-experimental && make -j$(nproc) && sudo make install && sudo ldconfig"
 install_tool "nmap" "nmap" "./configure && make -j$(nproc) && sudo make install"
@@ -133,6 +137,7 @@ install_tool "xsstrike" "XSStrike" "pip3 install -r requirements.txt"
 install_tool "cewl" "CeWL" "sudo gem install bundler && bundle install"
 install_tool "dirhunt" "dirhunt" "pip3 install -r requirements.txt"
 install_tool "subfinder" "subfinder" "go get -v ./... && go build -o subfinder . && sudo cp subfinder /usr/local/bin/"
+install_tool "recon-ng" "recon-ng" "pip install -r REQUIREMENTS"
 
 # install exiftool
 echo "Installing exiftool..."
